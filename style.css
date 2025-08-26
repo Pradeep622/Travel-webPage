@@ -1,0 +1,184 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: nowrap;  /* prevent breaking */
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff6600;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.login {
+  background: transparent;
+  color: #ff6600;
+  border: 2px solid #ff6600;
+}
+
+.btn.signup {
+  background: #ff6600;
+  color: white;
+  border: 2px solid #ff6600;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  /* color: #ff6600; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px;
+  background: #fff;
+  flex-wrap: wrap;  /* allow wrapping only in hero, not navbar */
+  gap: 20px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+.highlight{
+  color: #ff6600;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Section Generic */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Cards */
+.card-container, .plan-container, .blog-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card, .deal-card, .plan-card, .blog-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Deals Section Cards */
+.deals .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.deal-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 180px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Testimonials */
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+footer input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  width: 250px;
+}
+
+footer button {
+  border: none;
+  cursor: pointer;
+}
